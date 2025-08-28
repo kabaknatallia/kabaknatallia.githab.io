@@ -1,17 +1,254 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Портфоліо викладача біології — Кабак Наталія Валентинівна</title>
-  <link href="assets/css/style.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Біологія та екологія — Кабак Наталія Валентинівна</title>
+  <meta name="description" content="Портфоліо викладача: Кабак Наталія Валентинівна. Біологія та Основи екології — матеріали, методичні рекомендації, посилання." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f3f7f4; --paper:#ffffff; --ink:#0b3d2e; --muted:#486157; --accent:#1f6e4d; --accent-2:#2e7d60;
+      --soft:#e5f1ea; --ring:rgba(15,76,60,.13)
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;color:var(--ink);background:var(--bg);}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--accent);color:#fff;border-radius:999px;padding:.7rem 1.1rem;font-weight:600;border:0;box-shadow:0 8px 20px var(--ring)}
+    .btn:hover{background:var(--accent-2)}
+    .chip{display:inline-flex;align-items:center;gap:.5rem;background:var(--soft);border-radius:999px;padding:.4rem .8rem;font-weight:600;color:var(--accent-2)}
+    .card{background:var(--paper);border-radius:20px;box-shadow:0 12px 30px var(--ring);padding:28px}
+    header.hero{position:relative;color:#fff;min-height:58vh;display:grid;place-items:center;text-align:center}
+    .hero::before{content:"";position:absolute;inset:0;background:
+      linear-gradient(180deg,rgba(3,30,21,.55),rgba(3,30,21,.65)),
+      url('assets/img/forest.jpg') center/cover no-repeat;
+      filter:saturate(1.1)}
+    .hero .inner{position:relative;z-index:1;padding:64px 0}
+    .title{font-size:clamp(36px,6vw,64px);line-height:1.05;margin:0;font-weight:800}
+    .subtitle{opacity:.95;margin:12px auto 24px;max-width:820px;font-size:clamp(16px,2.8vw,22px)}
+    .nav-pills{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .nav-pills a{display:inline-block;padding:.6rem 1rem;border-radius:999px;background:rgba(255,255,255,.12);color:#fff;font-weight:600}
+    .nav-pills a:hover{background:rgba(255,255,255,.2)}
+    section{padding:48px 0}
+    h2.section{font-size:28px;margin:0 0 18px;font-weight:800;color:var(--ink)}
+    .grid{display:grid;gap:20px}
+    .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    @media (max-width:900px){.grid-2,.grid-3{grid-template-columns:1fr}}
+    .about img.photo{width:100%;max-width:360px;border-radius:22px;object-fit:cover;aspect-ratio:4/5;box-shadow:0 10px 30px var(--ring)}
+    .stat{display:flex;align-items:center;gap:10px}
+    .stat .num{font-weight:800;font-size:22px}
+    .tile{background:var(--paper);border-radius:18px;padding:22px;box-shadow:0 10px 26px var(--ring)}
+    .tile h3{margin:8px 0 6px;font-size:18px}
+    .tile p{margin:0;color:var(--muted)}
+    .icon{width:28px;height:28px}
+    table{width:100%;border-collapse:separate;border-spacing:0 10px}
+    th,td{padding:12px 14px;text-align:left;vertical-align:top}
+    thead th{font-size:13px;color:#2a5145;text-transform:uppercase;letter-spacing:.04em}
+    tbody tr{background:var(--paper);box-shadow:0 8px 20px var(--ring)}
+    tbody tr td:first-child{border-radius:14px 0 0 14px}
+    tbody tr td:last-child{border-radius:0 14px 14px 0}
+    details{background:var(--paper);border-radius:16px;box-shadow:0 8px 20px var(--ring);padding:14px 18px}
+    details>summary{cursor:pointer;font-weight:700}
+    footer{padding:40px 0;color:var(--muted);text-align:center}
+  </style>
 </head>
 <body>
+  <!-- HERO -->
+  <header class="hero">
+    <div class="inner container">
+      <h1 class="title">Біологія та екологія</h1>
+      <p class="subtitle">Наука про життя, яку ми створюємо разом. Портфоліо викладача — матеріали, курси, корисні посилання.</p>
+      <div class="nav-pills">
+        <a href="#about">Про мене</a>
+        <a href="#materials">Уроки й матеріали</a>
+        <a href="#docs">Методичні документи</a>
+        <a href="#goals">Мета і завдання</a>
+        <a href="#contacts">Контакти</a>
+      </div>
+    </div>
+  </header>
 
+  <main>
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div class="container grid grid-2" style="align-items:center">
+        <div>
+          <img src="assets/img/teacher.jpg" alt="Фото викладача" class="photo" />
+        </div>
+        <div>
+          <span class="chip">Спеціаліст вищої категорії</span>
+          <h2 class="section" style="margin-top:14px">Кабак Наталія Валентинівна</h2>
+          <p>Викладає навчальні дисципліни: «Біологія», «Основи екології».</p>
+          <p>
+            Дисципліна «Біологія», в основі якої лежить наука про природу, покликана стати провідником пізнання будови і функцій живих організмів, їх взаємозв’язків, гуманістичних ідей, екологічного способу мислення, здорового способу життя. Біологія в загальній системі підготовки спеціалістів ВНЗ І–ІІ рівнів акредитації є самостійною, цілісною дисципліною. Метою навчального курсу є забезпечення підготовки молодших спеціалістів знаннями з біології, формування наукової картини живої природи, екологічної культури, зміцнення духовного і фізичного здоров’я, формування ключових компетентностей.
+          </p>
+          <div class="grid grid-3" style="margin-top:14px">
+            <div class="stat"><span class="num">20+ </span><span>років досвіду</span></div>
+            <div class="stat"><span class="num">50+ </span><span>учнів-олімпіадників</span></div>
+            <div class="stat"><span class="num">Мета</span><span>— пробудити любов до природи</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- MATERIALS CARDS -->
+    <section id="materials">
+      <div class="container">
+        <h2 class="section">Уроки і матеріали</h2>
+        <div class="grid grid-3">
+          <div class="tile">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 20V8l7-4 7 4v12H5Z" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>Ботаніка</h3>
+            <p>Будова рослин, процеси життя, різноманіття.</p>
+          </div>
+          <div class="tile">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2s4 4 4 8-4 8-4 8-4-4-4-8 4-8 4-8Z" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>Зоологія</h3>
+            <p>Різноманіття тварин, адаптації, поведінка.</p>
+          </div>
+          <div class="tile">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M3 12h18M12 3v18" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>Екологія</h3>
+            <p>Взаємодія організмів і середовища, сталий розвиток.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- TEACHING PRINCIPLES -->
+    <section>
+      <div class="container">
+        <h2 class="section">Реалізація діяльності викладача</h2>
+        <div class="card">
+          <ul style="margin:0;padding-left:18px">
+            <li>формування життєвої компетентності студентів;</li>
+            <li>творче використання інноваційних технологій;</li>
+            <li>спрямування навчально-виховного процесу на формування духовного світу особистості;</li>
+            <li>утвердження загальнолюдських цінностей, потенційних можливостей та здібностей.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  
-  
+    <!-- DOCS TABLE 1 -->
+    <section id="docs">
+      <div class="container">
+        <h2 class="section">Методичні матеріали та документи</h2>
+        <div class="card" style="padding:0">
+          <div style="overflow:auto;padding:8px 8px 16px">
+            <table>
+              <thead>
+                <tr><th style="width:70px">№</th><th>Найменування</th><th style="width:160px">Посилання</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>Перелік залікових питань (071, 075)</td><td><a href="#">Переглянути</a></td></tr>
+                <tr><td>2</td><td>Перелік залікових питань (141, 208)</td><td><a href="#">Переглянути</a></td></tr>
+                <tr><td>3</td><td>Тематичний зміст курсу (ПЗСО)</td><td><a href="#">Переглянути</a></td></tr>
+                <tr><td>4</td><td>Тематичний зміст курсу (081)</td><td><a href="#">Переглянути</a></td></tr>
+                <tr><td>5</td><td>Перелік термінів</td><td><a href="#">Переглянути</a></td></tr>
+                <tr><td>6</td><td>Основи екології та охорони навколишнього природного середовища. Джигирей В.С.</td><td><a href="#">Переглянути</a></td></tr>
+                <tr><td>7</td><td>Закон України «Про охорону атмосферного повітря»</td><td><a href="#">Переглянути</a></td></tr>
+                <tr><td>8</td><td>Закон України «Про охорону навколишнього природного середовища»</td><td><a href="#">Переглянути</a></td></tr>
+                <tr><td>9</td><td>Водний кодекс України</td><td><a href="#">Переглянути</a></td></tr>
+                <tr><td>10</td><td>Про надра</td><td><a href="#">Переглянути</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BIG GOALS/TASKS TEXT -->
+    <section id="goals">
+      <div class="container">
+        <h2 class="section">Біологія та екологія — мета і завдання</h2>
+        <div class="card">
+          <p>
+            Метою вивчення біології та екології на рівні стандарту в ВНЗ І–ІІ рівнів акредитації є:
+            формування у студентів природничо‑наукової компетентності; засвоєння інтегрованих знань про закономірності функціонування живих систем, їх розвиток і взаємодію; розуміння біологічної картини світу та цінності життя і природи; застосування знань у повсякденному житті для сталого розвитку.
+          </p>
+          <p><strong>Завдання:</strong> оволодіння термінологічним апаратом; розуміння законів і закономірностей; міжпредметні зв’язки біології та екології; дослідницькі навички; оцінка впливу чинників довкілля; відповідальність за стан довкілля.</p>
+        </div>
+
+        <div class="grid grid-2" style="margin-top:18px">
+          <details open>
+            <summary>Студент повинен <strong>знати</strong></summary>
+            <ul>
+              <li>основні галузі застосування біологічних досліджень;</li>
+              <li>біосистеми різних рівнів; властивості живого (самооновлення, самовідтворення, саморегуляція);</li>
+              <li>критерії якості питної води; структури клітин, що забезпечують метаболізм; роль хімічних елементів;</li>
+              <li>сучасні молекулярно‑генетичні методи (секвенування, ПЛР, генетичні маркери);</li>
+              <li>типи мутацій, причини спадкових хвороб і вад людини; періоди розвитку людини;</li>
+              <li>принципи єдності організмів і середовища; властивості адаптацій; форми симбіозу;</li>
+              <li>адаптації людей і інших організмів; методи селекції; генна та клітинна інженерія;</li>
+              <li>досягнення репродуктивної медицини, трансплантології та донорства; небезпека біологічної зброї;</li>
+              <li>екологічні проблеми України і світу; види та критерії забруднення; раціональне використання ресурсів;</li>
+              <li>науки, що вивчають здоров’я людини.</li>
+            </ul>
+          </details>
+
+          <details open>
+            <summary>Студент повинен <strong>вміти</strong></summary>
+            <ul>
+              <li>складати схеми обміну речовин (вуглеводи, ліпіди, білки);</li>
+              <li>характеризувати типи успадкування ознак; розв’язувати типові задачі з генетики;</li>
+              <li>працювати з мікроскопом; оцінювати вплив чинників на ріст і розвиток людини;</li>
+              <li>визначати ступінь адаптованості організмів; наводити приклади екологічних чинників і взаємодій;</li>
+              <li>встановлювати причинно‑наслідкові зв’язки між екологічними процесами; складати карту екологічного стану регіону;</li>
+              <li>моделювати способи утилізації відходів.</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKS / SECOND TABLE -->
+    <section>
+      <div class="container">
+        <h2 class="section">Підручники та додаткові матеріали</h2>
+        <div class="card" style="padding:0">
+          <div style="overflow:auto;padding:8px 8px 16px">
+            <table>
+              <thead>
+                <tr><th style="width:70px">№</th><th>Найменування</th><th style="width:160px">Посилання</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>Біологія і екологія. Андерсон О. 10 клас</td><td><a href="#">Переглянути</a></td></tr>
+                <tr><td>2</td><td>Біологія і екологія. Соболь В.І. 10 клас</td><td><a href="#">Переглянути</a></td></tr>
+                <tr><td>3</td><td>Біологія. Балан П.Г. 10 клас</td><td><a href="#">Переглянути</a></td></tr>
+                <tr><td>4</td><td>Біологія. Тагліна О.В. 10 клас</td><td><a href="#">Переглянути</a></td></tr>
+                <tr><td>5</td><td>Тематичний зміст курсу</td><td><a href="#">Переглянути</a></td></tr>
+                <tr><td>6</td><td>Теми практичних і лабораторних робіт</td><td><a href="#">Переглянути</a></td></tr>
+                <tr><td>7</td><td>Література</td><td><a href="#">Переглянути</a></td></tr>
+                <tr><td>8</td><td>Критерії оцінювання</td><td><a href="#">Переглянути</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTS -->
+    <section id="contacts">
+      <div class="container">
+        <div class="card">
+          <h2 class="section">Контакти</h2>
+          <p>Ел. пошта: <a href="mailto:teacher@example.com">teacher@example.com</a><br>
+             Телефон: <a href="tel:+380000000000">+380 (00) 000‑00‑00</a></p>
+          <a class="btn" href="#about">Повернутися нагору</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="y"></span> Кабак Н.В. — Біологія та екологія</div>
+  </footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
