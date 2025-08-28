@@ -262,3 +262,30 @@ footer {
   color: var(--muted);
   text-align: center;
 }
+
+/* Видео фон у hero */
+.hero {
+  position: relative;
+  color: #fff;
+  min-height: 50vh;       /* ← можно уменьшить высоту */
+  display: grid;
+  place-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(0.6); /* затемнение для читаемости текста */
+}
+
+.hero .inner {
+  position: relative;
+  z-index: 1;
+  padding: 40px 0;        /* ← уменьшил паддинг для компактности */
+}
