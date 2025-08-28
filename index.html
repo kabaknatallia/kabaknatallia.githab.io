@@ -206,5 +206,13 @@
   </footer>
 
   <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const video = document.querySelector(".hero-video");
+    if (video) {
+      video.playbackRate = 0.5; // скорость 50% от оригинала
+    }
+  });
+</script>
 </body>
 </html>
