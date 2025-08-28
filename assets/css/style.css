@@ -85,24 +85,6 @@ a:hover {
 /* ===========================
    Шапка (Hero)
 =========================== */
-header.hero {
-  position: relative;
-  color: #fff;
-  min-height: 58vh;              /* ← здесь регулируется высота шапки */
-  display: grid;
-  place-items: center;
-  text-align: center;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: 
-    linear-gradient(180deg, rgba(3,30,21,.55), rgba(3,30,21,.65)),
-    url('assets/img/forest.jpg') center/cover no-repeat;
-  filter: saturate(1.1);
-}
 
 .hero .inner {
   position: relative;
